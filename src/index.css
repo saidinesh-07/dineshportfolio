@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 35 100% 97%;
+    --foreground: 25 30% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 25 30% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 25 30% 15%;
+
+    --primary: 30 100% 55%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 35 95% 75%;
+    --secondary-foreground: 25 30% 15%;
+
+    --muted: 35 35% 90%;
+    --muted-foreground: 30 20% 45%;
+
+    --accent: 25 100% 60%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 30 30% 88%;
+    --input: 30 30% 88%;
+    --ring: 25 95% 60%;
+
+    --radius: 1rem;
+
+    /* Custom glassmorphism */
+    --glass-bg: 0 0% 100% / 0.7;
+    --glass-border: 35 60% 80% / 0.3;
+    --glow-primary: 30 100% 55%;
+    --glow-secondary: 25 100% 60%;
+  }
+
+  .dark {
+    --background: 222 47% 6%;
+    --foreground: 210 40% 98%;
+
+    --card: 222 47% 10%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222 47% 10%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 230 85% 65%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 230 20% 18%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 230 20% 15%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 250 85% 70%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 50.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 230 25% 20%;
+    --input: 230 25% 20%;
+    --ring: 230 85% 65%;
+
+    /* Custom glassmorphism dark */
+    --glass-bg: 222 47% 10% / 0.6;
+    --glass-border: 230 40% 30% / 0.2;
+    --glow-primary: 230 85% 65%;
+    --glow-secondary: 250 85% 70%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
